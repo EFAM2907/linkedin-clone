@@ -13,19 +13,21 @@ import './styles.css';
 export default function Header() {
   return (
     <header className="header">
-      <div className="nav">
-     <LinkedInIcon className="logo-Link" />
-       <input type='search' placeholder= 'buscar' />
-        <HeaderIcons Icon={SearchIcon} title ='Search'/>
-         <div className='Search'>
+     <div className="nav">
+      <LinkedInIcon className="logo-Link" />
+       <div className='Search'>
+        {/* <HeaderIcons Icon={SearchIcon}/> */}
+        <SearchIcon />
+         <input type='search' placeholder= 'Buscar' />
           </div> 
             <HeaderIcons Icon={HomeIcon} title ='Home'/>
              <HeaderIcons Icon={ChatIcon} title ='Chat'/>
               <HeaderIcons Icon={BusinessCenterIcon} title ='Business'/>
                <HeaderIcons Icon={NotificationsIcon} title ='Notificate'/>
                 <HeaderIcons Icon={SupervisorAccountIcon} title ='SuperVisor'/>
+                 <HeaderIcons avatar title ='Yo' />
                  <HeaderIcons Icon={DialpadIcon} title ='Producto'/>
-                  <HeaderIcons  title ='Prueba Premium Gtris este Mes'/>
+                  <HeaderIcons  text ='Prueba Premium Gtris este Mes'/>
      
       </div>
     </header>
